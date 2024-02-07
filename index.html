@@ -4,20 +4,40 @@
     <title>Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
+
+    <section>
+      <h2>Simple Animation</h2>
+
+      <div class="box blue animate-left-right"></div>
+    </section>
+
+    <section class="animate-slide-in-left">
+      <div class="max-w-lg">
+        <h2>Whole section is animated</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem laboriosam provident voluptate officiis quae asperiores dicta unde similique possimus deleniti? Magnam assumenda eligendi quod officia ea quaerat, voluptatum laborum deserunt?</p>
+      </div>
+    </section>
+
+    <section class="animate-slide-in-right">
+      <div class="max-w-lg">
+        <h2>Whole section is animated</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem laboriosam provident voluptate officiis quae asperiores dicta unde similique possimus deleniti? Magnam assumenda eligendi quod officia ea quaerat, voluptatum laborum deserunt?</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Squash and Stretch</h2>
+
+      <div class="ball orange animate-bouncing-ball"></div>
+    </section>
+
+    <section>
+      <h2>Squash and Stretch</h2>
+
+      <div class="ball orange animate-bouncing-ball"></div>
+    </section>
   </body>
 </html>
