@@ -3,14 +3,14 @@
   height: 100px;
 }
 
-.blue {
-  background-color: cornflowerblue;
-}
-
 .ball {
   width: 100px;
   height: 100px;
   border-radius: 100000px;
+}
+
+.blue {
+  background-color: cornflowerblue;
 }
 
 .orange {
@@ -21,85 +21,37 @@
   max-width: 300px;
 }
 
-.animate-left-right {
-  animation-name: left-right;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(0.85, -0.29, 0.11, 1.31);
+.min-h-screen {
+  min-height: 100vh;
 }
 
-@keyframes left-right {
-  0% {
-    transform: translateX(0px);
-  }
-
-  50% {
-    transform: translateX(200px);
-  }
-
-  100% {
-    transform: translateX(0px);
-  }
+.overflow-hidden {
+  overflow: hidden;
 }
 
-.animate-slide-in-left {
-  animation-name: slide-in-left;
-  animation-duration: 1s;
+.centered-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes slide-in-left {
-  from {
-    translate: -100%;
-  }
-
-  to {
-    translate: 0px;
-  }
+/* Pseudo Selectors */
+.hover-scale {
+  transition-duration: 1s;
+  transition-property: all;
 }
 
-.animate-slide-in-right {
-  animation-name: slide-in-right;
-  animation-duration: 1s;
+.hover-scale:hover {
+  scale: 1.5;
+  background-color: orange;
 }
 
-@keyframes slide-in-right {
-  from {
-    translate: 100%;
-  }
-
-  to {
-    translate: 0px;
-  }
+.click-scale {
+  transition-duration: 100ms;
+  transition-property: scale;
+  transition-timing-function: ease-in-out;
 }
 
-.animate-bouncing-ball {
-  animation-name: bouncing-ball;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes bouncing-ball {
-  0% {
-    translate: 0px;
-  }
-
-  40% {
-    translate: 0px 100px;
-    height: 100px;
-  }
-
-  50% {
-    translate: 0px 120px;
-    height: 80px;
-  }
-
-  60% {
-    translate: 0px 100px;
-    height: 100px;
-  }
-
-  100% {
-    translate: 0px;
-  }
+.click-scale:active {
+  scale: 0.8;
 }
